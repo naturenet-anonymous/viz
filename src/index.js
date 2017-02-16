@@ -15,9 +15,9 @@ ReactDOM.render(
 
 import summary from './summary';
 import about from './about';
-// import site from './site';
-// import recent from './recent';
-// import users from './users';
+import site from './site';
+import recent from './recent';
+import users from './users';
 
 class MyIndex extends React.Component {
   render() {
@@ -48,6 +48,9 @@ export class App extends React.Component {
         <IndexRedirect to="/about"/>
         <Route path="summary" component={summary}/>
         <Route path="about" component={about}/>
+        <Route path="recent" component={recent}/>
+        <Route path="users" component={users}/>
+        <Route path="site" component={site}/>
       </Route>
   </Router>
 )

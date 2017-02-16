@@ -10,9 +10,13 @@ $ npm i --save lodash
 
 - react-router
 $ npm install react-router
+Must use hashHistory instead of browserHistory with github pages
 
 - axios
 $ npm install axios
 
 - recharts
 $ npm install recharts
+
+- lodash-joins
+$ npm install lodash-joins
