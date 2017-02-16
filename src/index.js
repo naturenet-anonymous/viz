@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute, IndexRedirect } from 'react-router';
+import { Router, Route, Link, hashHistory, IndexRoute, IndexRedirect } from 'react-router';
 // import App from './App';
 import './index.css';
 
@@ -43,7 +43,7 @@ class MyIndex extends React.Component {
 
 export class App extends React.Component {
 	render() {
-		return (<Router history={browserHistory}>
+		return (<Router history={hashHistory}>
       <Route path="/" component={MyIndex}>
         <IndexRedirect to="/about"/>
         <Route path="summary" component={summary}/>
